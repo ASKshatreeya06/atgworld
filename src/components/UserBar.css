@@ -1,0 +1,9 @@
+.userdetails>img{
+    height: 2.5rem;
+    border-radius: 50%;
+
+}
+.userdetails>span{
+    font-size: 1rem;
+    font-weight: bold;
+}

@@ -1,0 +1,13 @@
+.Group>img{
+    height: 18px;
+    width: 18px;
+}
+.Group>input{
+   border: none ;
+   font-size: 14px;
+   border-bottom: 1px solid black;
+}
+.Group>button{
+    border: none;
+    background-color: inherit;
+}

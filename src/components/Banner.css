@@ -1,0 +1,34 @@
+.Banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.text>h5 {
+    font-size: 36px;
+}
+
+.text>p {
+    font-size: 18px;
+}
+
+@media (max-width:490px) {
+    .banner_body>img {
+        height: 236px;
+    }
+
+    .text>h5 {
+        font-size: 17px;
+
+    }
+
+    .text>p {
+        font-size: 12px;
+    }
+}

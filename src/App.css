@@ -1,0 +1,22 @@
+
+
+.rowbody {
+  display: inline-grid;
+  grid: flex;
+  grid-template-columns: repeat(12, 1fr);
+}
+.colbody1{
+grid-column: 4/8;
+align-items: center;
+}
+.colbody2{
+  grid-column: 10/13;
+}
+@media (max-width:490px) {
+  .colbody1{
+    grid-column: 1/13;
+  }
+  .colbody2{
+    grid-column: 0/0;
+  }
+}
