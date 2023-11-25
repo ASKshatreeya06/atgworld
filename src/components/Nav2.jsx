@@ -4,7 +4,7 @@ const Nav2 = (prop) => {
     return (
         <div>
             {/* <nav className="navbar  "> */}
-                <div  className="container-fluid w-100 bg-body-tertiary">
+                <div  className="container-fluid w-100 bg-body-tertiary mt-5">
 
 
 

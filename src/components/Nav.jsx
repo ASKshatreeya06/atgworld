@@ -6,7 +6,7 @@ const Nav = (prop) => {
     
     return (
         <>
-            <nav class="d-none d-lg-block navbar navbar-expand-lg bg-body-tertiary position-sticky mt-5">
+            <nav class="d-none d-lg-block navbar navbar-expand-lg bg-body-tertiary sticky-top mt-5 mx-5">
                 <div class="container-fluid">
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,17 +29,17 @@ const Nav = (prop) => {
 
 
                         </ul>
-                        <div class="dropdown">
+                        <div class="dropdown mx-5 me-5">
                             <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Write Post
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu ">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </div>
-                        <button className='btn btn-primary'><GroupAddIcon /> Join Group</button>
+                        <button className='btn btn-primary me-5 '><GroupAddIcon /> Join Group</button>
                     </div>
                 </div>
             </nav>

@@ -53,7 +53,7 @@ const Card = () => {
     <>
       {
         posts.map((post, index) => (
-          <div key={index} className="card my-3" style={{ width: '18rem;' }}>
+          <div key={index} className="card my-3 mx-0" style={{ width: '18rem;' }}>
             <img src={post.imgsrc} className="card-img-top" alt="photo" />
             <div className="card-body">
               <p>{post.category}</p>
@@ -64,17 +64,19 @@ const Card = () => {
               <p className="card-text">{post.text}</p>
 
               <div className='d-flex justify-content-between'>
-              <div className='d-flex flex-sm-column'>
-                  <UserBar userimg={post.userimg} userFname={post.userFname} userLname={post.userLname} />
-                  <span>{post.views} views</span>
-                  
+
+                <UserBar userimg={post.userimg} userFname={post.userFname} userLname={post.userLname} />
+                
+
+                <div>
+                <span>{post.views} views</span>
+                  <button className='border-0 ms-4'>
+                    <a href="#" className="mx-2 text-decoration-none">
+                      <IconButton aria-label="share">
+                        <ShareIcon />
+                      </IconButton>share</a>
+                  </button>
                 </div>
-                <button className='border-0'>
-                  <a href="#" className="mx-2 text-decoration-none">
-                    <IconButton aria-label="share">
-                      <ShareIcon />
-                    </IconButton>share</a>
-                </button>
               </div>
 
             </div>

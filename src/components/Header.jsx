@@ -32,7 +32,8 @@ const Header = () => {
                   <Link class="dropdown-item" to="/login">Login</Link>
                 </li>
                 <li><Link class="dropdown-item" to="/home">home</Link></li>
-                <li><Link class="dropdown-item" to="#">Action three</Link></li>
+                <li data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                <Link class="dropdown-item" to="/signup">sing up</Link></li>
               </ul>
             </div>
 

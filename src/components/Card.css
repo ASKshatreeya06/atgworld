@@ -1,8 +1,15 @@
 .card{
     height: 472px !important;
-    width: 24rem;
+    width: 35rem !important;
 }
 .card img{
     height: 220px;
+}
+@media (max-width:590px) {
+
+    .card{
+    height: 472px !important;
+    width: 21rem !important;
+}
 }
 

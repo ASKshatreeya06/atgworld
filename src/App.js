@@ -21,17 +21,18 @@ function App() {
           <Header />
         </div>
         <Banner />
-        <div className='d-block d-lg-none '><Nav2 post={post} /></div>
+        <div className='d-block d-lg-none sticky-top'><Nav2 post={post} /></div>
         <Nav post={post} />
         <Routes>
 
-          <Route path='/home' element={<Card />} />
-          <Route path='/login' element={<div className='container justify-content-evenly'>
+          <Route path='/login' element={<Login id="exampleModal" title="Sing In" />} />
+          <Route path='/home' element={<div className='container justify-content-evenly'>
             <div className='rowbody'>
-              <div className='colbody1 '><Card /><Login title="Sing In" /></div>
-              <div className='colbody2 d-none d-lg-block'><Group /></div>
+              <div className='colbody1 '><Card /></div>
+              <div className='colbody2 d-none d-lg-block '><Group /></div>
             </div>
           </div>} />
+          <Route path='/singup' element={<Login id="exampleModal1" title="Create account" input1='<input type="text" value{userFname}/>'/>} />
 
         </Routes>
       </BrowserRouter>

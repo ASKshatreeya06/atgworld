@@ -15,7 +15,7 @@ const Login = (prop) => {
       </button> */}
 
       {/* <!-- Modal --> */}
-      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade " id={prop.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg h-100 pb-5" >
           <div class="modal-header custom-transparent ">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -27,12 +27,13 @@ const Login = (prop) => {
             </div>
             <p className='text-center my-3 d-none d-lg-block'>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
             <div className='d-flex justify-content-between mx-5 d-none d-lg-block'>
-              <h2>Sign In</h2>
+              <h2>{prop.title}</h2>
               <p>Don’t have an account yet? <a className='text-decoration-none' href='/'>Create new for free!</a></p>
             </div>
             <div class="modal-body row ">
               <div className='col-lg-6 col-md-6 col-12'>
                 <form class="">
+                  { prop.input1}
                   <div class="form-floating ">
                     <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com" />
                     <label for="floatingInput">Email address</label>

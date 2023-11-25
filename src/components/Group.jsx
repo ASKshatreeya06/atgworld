@@ -13,7 +13,7 @@ const Group = () => {
     }
     return (
         <>
-            <div className='Group d-flex my-5 m-auto'>
+            <div className='Group d-flex mt-5 m-auto sticky-top'>
                 <img className='my-1' src={location} alt='location' />
                 <input placeholder='Enter Your location' onClick={State} value={area} onChange={(e) => setArea(e.target.value)} />
                 

@@ -21,6 +21,7 @@
 @media (max-width:490px) {
     .banner_body>img {
         height: 236px;
+        width: 100%;
     }
 
     .text>h5 {
