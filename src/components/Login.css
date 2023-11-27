@@ -43,7 +43,10 @@
     border-radius: 20px !important;
 }
 
-
+.modal-content {
+    height: 500px !important;
+    
+}
 
 #exampleModal {
     margin: 0 !important;

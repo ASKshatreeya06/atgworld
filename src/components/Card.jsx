@@ -3,6 +3,7 @@ import './Card.css'
 import { IconButton } from '@mui/material';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
+import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import UserBar from './UserBar';
 
 const Card = () => {
@@ -53,7 +54,7 @@ const Card = () => {
     <>
       {
         posts.map((post, index) => (
-          <div key={index} className="card my-3 mx-0" style={{ width: '18rem;' }}>
+          <div key={index} className="card my-3 mx-0" >
             <img src={post.imgsrc} className="card-img-top" alt="photo" />
             <div className="card-body">
               <p>{post.category}</p>
@@ -69,10 +70,10 @@ const Card = () => {
                 
 
                 <div>
-                <span>{post.views} views</span>
+                <span><RemoveRedEyeOutlinedIcon/> {post.views} views</span>
                   <button className='border-0 ms-4'>
                     <a href="#" className="mx-2 text-decoration-none">
-                      <IconButton aria-label="share">
+                    <IconButton aria-label="share">
                         <ShareIcon />
                       </IconButton>share</a>
                   </button>

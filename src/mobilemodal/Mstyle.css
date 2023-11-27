@@ -1,0 +1,20 @@
+#moboModal{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/022/460/209/large_2x/a-computer-desktop-wallpaper-for-forex-trading-terminal-ai-generative-desktop-background-free-photo.jpg') !important;
+    
+    height: 30rem !important;
+    
+    background-color: red !important;
+    padding-top: 20rem;
+    
+}
+.moboForm{ 
+    padding-top: 2rem;
+    
+   background-color: #fff;
+    height: 35rem !important;
+    z-index: 1;
+}
+.moboForm>div>h3{
+    font-size: 28px !important;
+    font-weight: bold;
+}

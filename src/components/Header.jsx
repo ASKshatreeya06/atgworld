@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../img/whole.jpg'
 import './Header.css'
 import { Link } from 'react-router-dom'
 
+
+
 const Header = () => {
+  
   return (
     <>
       <nav className="navbar navbar-expand-md navbar-light bg-light mb-4 border">
@@ -19,21 +22,23 @@ const Header = () => {
 
             </ul>
             <form className="d-flex me-auto align-item-center" role="search">
+
               <input className="form-control me-2 " type="search" placeholder="Search for your favorite groups in ATG" aria-label="Search" />
               {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
             </form>
 
-            <div class="dropdown-center">
-              <button class="btn btn-lightblue dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div className="dropdown-center">
+              <button className="btn btn-lightblue dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Create account.<b>It's free!</b>
               </button>
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
                 <li data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <Link class="dropdown-item" to="/login">Login</Link>
+                  <Link className="dropdown-item" to="/login" >Login</Link>
                 </li>
-                <li><Link class="dropdown-item" to="/home">home</Link></li>
-                <li data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                <Link class="dropdown-item" to="/signup">sing up</Link></li>
+                <li><Link className="dropdown-item" to="/">home</Link></li>
+                <li data-bs-toggle="modal" data-bs-target="#signupModal">
+                  <Link className="dropdown-item" to="/signup" >sing up</Link></li>
+              
               </ul>
             </div>
 
